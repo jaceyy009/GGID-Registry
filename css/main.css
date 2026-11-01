@@ -1,6 +1,7 @@
 :root {
     --background: #ffffff;
     --accent: #40189e;
+    --accent-hover: #6c3fd4;
     --text: #0a0c05;
     --muted: #7a7586;
     --border: #d6d6d6;
@@ -93,11 +94,24 @@ nav a:hover {
 .primary {
     background: var(--accent);
     color: white;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.primary:hover {
+    background: var(--accent-hover);
+    transform: scale(1.05);
 }
 
 .secondary {
     border: 1px solid var(--border);
-    color: var(--text)
+    color: var(--text);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.secondary:hover {
+    background: var(--border);
+    border: 1px solid var(--text);
+    transform: scale(1.05);
 }
 
 .information {
