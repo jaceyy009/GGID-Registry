@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Developers – GGID Registry</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <a href="index.html" class="logo">
+                GGID <span>REGISTRY</span>
+            </a>
+
+            <nav>
+                <a href="search.html">Search</a>
+                <a href="validator.html">Validator</a>
+                <a href="developers.html">Developers</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="information">
+                <h1>Developer Registration</h1>
+                <p>Developers and studios must apply before receiving permission to register games.</p>
+            </section>
+
+            <section class="application-section">
+                <h2>Apply for a developer account</h2>
+                <p>Submitting an application does not guarantee approval or automatically create an account.</p>
+
+                <form id="applicationForm">
+                    <label for="applicantName">Your name</label>
+                    <input type="text" id="applicantName" maxlength="100" required>
+
+                    <label for="developerName">Developer or studio name</label>
+                    <input type="text" id="developerName" maxlength="100" required>
+
+                    <label for="email">Contact email</label>
+                    <input type="email" id="email" maxlength="254" required>
+
+                    <label for="website">Website or portfolio (optional)</label>
+                    <input type="url" id="website" maxlength="300" placeholder="https://example.com">
+
+                    <label for="reason">Why are you applying?</label>
+                    <textarea id="reason" maxlength="2000" rows="6" required></textarea>
+
+                    <button type="submit" id="submitButton">Submit Application</button>
+
+                    <p id="applicationMessage" role="status"></p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>GGID Registry • Identification System</p>
+        </footer>
+
+        <script type="module" src="js/application.js">
+
+    </body>
+</html>
