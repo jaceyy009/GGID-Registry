@@ -28,9 +28,27 @@
         <p>Review and manage developer applications.</p>
       </section>
 
-      <section class="admin-section">
-        
-        <h2>Developer Applications</h2>
+      <section id="loginSection">
+        <h2>Administrator Sign In</h2>
+
+        <form id="adminLoginForm">
+          <label for="adminEmail">Email</label>
+          <input type="email" id="adminEmail" required>
+          
+          <label for="adminPassword">Password</label>
+          <input type="password" id="adminPassword" required>
+
+          <button type="submit" id="loginButton">Sign In</button>
+
+          <p id="loginMessage"></p>
+        </form>
+      </section>
+
+      <section id="dashboardSection" hidden>
+        <div>
+          <h2>Developer Applications</h2>
+          <button type="button" id="logoutButton">Sign Out</button>
+        </div>
 
         <div class="application-filters">
           <button type="button" class="active" data-filter="pending">
@@ -59,5 +77,6 @@
         </div>"
       </section>
     </main>
+    <script type="module" src="js/admin-auth.js"></script>
   </body>
 </html>
