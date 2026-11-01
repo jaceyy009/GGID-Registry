@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard – GGID Registry</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <a href="index.html" class="logo">
+        GGID <span>REGISTRY</span>
+      </a>
+
+      <nav>
+        <a href="search.html">Search</a>
+        <a href="validator.html">Validator</a>
+        <a href="developers.html">Developers</a>
+      </nav>
+    </header>
+
+    <main class="page-container">
+
+      <section class="page-heading">
+        <h1>Administrator Dashboard</h1>
+        <p>Review and manage developer applications.</p>
+      </section>
+
+      <section class="admin-section">
+        
+        <h2>Developer Applications</h2>
+
+        <div class="application-filters">
+          <button type="button" class="active" data-filter="pending">
+            Pending
+          </button>
+
+          <button type="button" data-filter="under_review">
+            Under Review
+          </button>
+
+          <button type="button" data-filter="approved">
+            Approved
+          </button>
+
+          <button type="button" data-filter="rejected">
+            Rejected
+          </button>
+
+          <button type="button" data-filter="all">
+            All
+          </button>
+        </div>
+
+        <div id="applicationList">
+          <p>Applications will appear here.</p>
+        </div>"
+      </section>
+    </main>
+  </body>
+</html>
